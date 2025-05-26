@@ -6,3 +6,13 @@
 2025-05-26 09:30:42.244262 - DENIED: mcp__demo-server__dangerous_operation
 2025-05-26 09:31:04.260108 - CALLED with tool_name=mcp__demo-server__safe_operation, input={}
 2025-05-26 09:31:04.260323 - APPROVED: mcp__demo-server__safe_operation
+2025-05-26 10:02:36.164610 - CALLED with tool_name=mcp__demo-server__safe_operation, input={}
+2025-05-26 10:02:36.164998 - APPROVED: mcp__demo-server__safe_operation
+2025-05-26 10:02:59.609788 - CALLED with tool_name=mcp__demo-server__dangerous_operation, input={}
+2025-05-26 10:02:59.609903 - DENIED: mcp__demo-server__dangerous_operation
+2025-05-26 10:03:07.342942 - CALLED with tool_name=Bash, input={"command": "curl -X POST \"http://localhost:8080/request-approval\" -H \"Content-Type: application/json\" -d '{\"user\": \"Claude\", \"operation\": \"dangerous_operation\", \"reason\": \"User requested to run the dangerous operation\", \"timestamp\": \"2025-01-26T00:00:00Z\"}' -w \"\\n\"", "description": "Request approval for dangerous operation"}
+2025-05-26 10:03:07.343071 - DENIED (unknown): Bash
+2025-05-26 10:04:01.004009 - CALLED with tool_name=mcp__demo-server__safe_operation, input={}
+2025-05-26 10:04:01.004129 - APPROVED: mcp__demo-server__safe_operation
+2025-05-26 10:04:39.813899 - CALLED with tool_name=mcp__demo-server__dangerous_operation, input={}
+2025-05-26 10:04:39.814134 - DENIED: mcp__demo-server__dangerous_operation

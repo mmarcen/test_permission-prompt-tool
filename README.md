@@ -52,3 +52,21 @@ claude -p "run the dangerous operation" \
   --debug
 ```
 Expected: The operation is denied with message "This operation is not allowed for security reasons"
+
+
+## Output
+```bash
+
+❯ claude -p "run the safe operation" \
+  --mcp-config mcp-servers.json \
+  --permission-prompt-tool mcp__approval-server__permissions__approve \
+
+
+The safe operation executed successfully.
+❯ claude -p "run the dangerous operation" \
+  --mcp-config mcp-servers.json \
+  --permission-prompt-tool mcp__approval-server__permissions__approve \
+
+
+The dangerous operation was denied for security reasons, as expected. The MCP server blocked this operation to protect the system.
+```
