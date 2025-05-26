@@ -1,0 +1,8 @@
+2025-05-26 09:23:37.168080 - CALLED with tool_name=mcp__demo-server__safe_operation, input={}
+2025-05-26 09:23:37.168290 - APPROVED: mcp__demo-server__safe_operation
+2025-05-26 09:23:53.822481 - CALLED with tool_name=mcp__demo-server__dangerous_operation, input={}
+2025-05-26 09:23:53.822726 - DENIED: mcp__demo-server__dangerous_operation
+2025-05-26 09:30:42.243867 - CALLED with tool_name=mcp__demo-server__dangerous_operation, input={}
+2025-05-26 09:30:42.244262 - DENIED: mcp__demo-server__dangerous_operation
+2025-05-26 09:31:04.260108 - CALLED with tool_name=mcp__demo-server__safe_operation, input={}
+2025-05-26 09:31:04.260323 - APPROVED: mcp__demo-server__safe_operation

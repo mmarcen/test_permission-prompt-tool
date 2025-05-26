@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "approval-server": {
+      "command": "python",
+      "args": ["approval_server.py"]
+    },
+    "demo-server": {
+      "command": "python", 
+      "args": ["demo_server.py"]
+    }
+  }
+}
